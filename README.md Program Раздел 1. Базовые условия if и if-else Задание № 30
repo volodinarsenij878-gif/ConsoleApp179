@@ -1,0 +1,27 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program30
+    {
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Оценка (2–5): ");
+            if (int.TryParse(Console.ReadLine(), out int grade))
+            {
+                if (grade == 4 || grade == 5)
+                    Console.WriteLine("Молодец");
+                else
+                    Console.WriteLine("Нужно подтянуться");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода.");
+            }
+        }
+    }
+    }
